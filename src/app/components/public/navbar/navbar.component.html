@@ -1,0 +1,26 @@
+<nav class="navbar navbar-light navbar-expand-lg autismo">
+  <a class="navbar-brand" href="#">Handicapp</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">
+              <a class="nav-link" [routerLink]="['/']">Principal</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="'active'">
+              <a class="nav-link" [routerLink]="['/blog']">Blog</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="'active'">
+              <a class="nav-link" [routerLink]="['/foro']">Foro</a>
+          </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+              <a [routerLink]="['login']" class="btn btn-outline-dark mx-2">Iniciar sesion</a>
+              <a [routerLink]="['signin']" class="btn btn-outline-dark mx-2">Registrarse</a>
+          <!-- <button class="btn btn-outline-dark mx-2" type="button">Iniciar sesion</button>
+          <button class="btn btn-outline-dark mx-2" type="button">Registrarse</button>-->
+      </form> 
+  </div>
+</nav>
